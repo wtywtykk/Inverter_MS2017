@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A8DE001A-A61A-482C-A429-47063759C0D8}</ProjectGuid>
+    <BSP_ID>com.sysprogs.msp430.core</BSP_ID>
+    <BSP_VERSION>1.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.msp430</ToolchainID>
+    <ToolchainVersion>4.6.3/7.4/r7</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.msp430</ToolchainID>
+    <ToolchainVersion>4.6.3/7.4/r7</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;__MSP430F5529__=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;__MSP430F5529__=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointer>true</OmitFramePointer>
+      <InlineFunctions>true</InlineFunctions>
+      <WarningLevel>Extra</WarningLevel>
+      <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ADC.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="DSP\include\DSPLib.h" />
+    <ClInclude Include="DSP\include\DSPLib_filter.h" />
+    <ClInclude Include="DSP\include\DSPLib_lea.h" />
+    <ClInclude Include="DSP\include\DSPLib_matrix.h" />
+    <ClInclude Include="DSP\include\DSPLib_support.h" />
+    <ClInclude Include="DSP\include\DSPLib_transform.h" />
+    <ClInclude Include="DSP\include\DSPLib_types.h" />
+    <ClInclude Include="DSP\include\DSPLib_utility.h" />
+    <ClInclude Include="DSP\include\DSPLib_vector.h" />
+    <ClInclude Include="Feedback.h" />
+    <ClInclude Include="FlyBackPWMGen.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="SPWMGen.h" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df1_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df2_ext_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df2_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_df1_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_df2_ext_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_biquad_df2_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_cmplx_fir_iq31.c" />
+    <ClCompile Include="DSP\source\filter\msp_cmplx_fir_q15.c" />
+    <ClCompile Include="DSP\source\filter\msp_fir_iq31.c" />
+    <ClCompile Include="DSP\source\filter\msp_fir_q15.c" />
+    <ClCompile Include="DSP\source\lea\msp_lea_flags.c" />
+    <ClCompile Include="DSP\source\lea\msp_lea_init.c" />
+    <ClCompile Include="DSP\source\lea\msp_lea_isr.c" />
+    <ClCompile Include="DSP\source\lea\msp_lea_patch.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_abs_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_abs_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_add_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_add_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_mpy_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_mpy_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_neg_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_neg_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_offset_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_offset_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_scale_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_scale_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_shift_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_shift_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_sub_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_sub_q15.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_trans_iq31.c" />
+    <ClCompile Include="DSP\source\matrix\msp_matrix_trans_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_bitrev_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_bitrev_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_auto_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_fixed_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_auto_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_fixed_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_fft_auto_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_fft_fixed_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_fft_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_ifft_auto_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_ifft_fixed_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_ifft_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_split_iq31.c" />
+    <ClCompile Include="DSP\source\transform\msp_split_q15.c" />
+    <ClCompile Include="DSP\source\transform\msp_transform_tables.c" />
+    <ClCompile Include="DSP\source\utility\msp_cmplx_fill_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_cmplx_fill_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_cmplx_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_cmplx_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_copy_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_copy_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_deinterleave_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_deinterleave_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_fill_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_fill_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_interleave_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_interleave_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_iq31_to_q15.c" />
+    <ClCompile Include="DSP\source\utility\msp_q15_to_iq31.c" />
+    <ClCompile Include="DSP\source\utility\msp_sinusoid_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_abs_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_abs_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_add_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_add_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_add_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_add_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_conj_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_conj_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mac_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mac_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_real_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_real_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_scale_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_scale_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_shift_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_shift_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_sub_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_cmplx_sub_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_mac_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_mac_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_max_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_max_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_max_uq15.c" />
+    <ClCompile Include="DSP\source\vector\msp_max_uq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_min_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_min_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_min_uq15.c" />
+    <ClCompile Include="DSP\source\vector\msp_min_uq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_mpy_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_mpy_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_neg_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_neg_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_offset_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_offset_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_scale_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_scale_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_shift_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_shift_q15.c" />
+    <ClCompile Include="DSP\source\vector\msp_sub_iq31.c" />
+    <ClCompile Include="DSP\source\vector\msp_sub_q15.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="ADC.c" />
+    <ClCompile Include="Clock.c" />
+    <ClCompile Include="Feedback.c" />
+    <ClCompile Include="FlyBackPWMGen.c" />
+    <ClCompile Include="low_level_init.c" />
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="SPWMGen.c" />
+    <None Include="mcu.props" />
+    <None Include="Inverter_MS2017-Debug.vgdbsettings" />
+    <None Include="Inverter_MS2017-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4a67b007-244c-48eb-bb21-5099c43613a4}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{121b3f56-8e4f-48db-9181-c504ea858b69}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{f9252428-f431-407b-b59f-fa78b222d01f}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{d139860c-3e7d-4af0-9c69-c1dd60fc4700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{dcf4cc02-497a-48ce-8abd-157b33ee77bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{80280705-6ee0-48cd-97a5-c4a0830323f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\DSP">
+      <UniqueIdentifier>{3f5259da-16fa-4c0a-80f5-347847571a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP">
+      <UniqueIdentifier>{f6d787c1-a3b3-478e-b0d0-6eab1b207708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\filter">
+      <UniqueIdentifier>{50af8fcb-0211-45a3-8b18-527df975313d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\lea">
+      <UniqueIdentifier>{f616825d-7208-41ea-930b-e0b080022465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\matrix">
+      <UniqueIdentifier>{5436e5b2-daee-429d-9247-cea434a80b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\transform">
+      <UniqueIdentifier>{f98af735-8e92-4bf4-8ef6-c990c8dfd505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\utility">
+      <UniqueIdentifier>{bec556bc-f1b1-49aa-b898-b4649d131f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP\vector">
+      <UniqueIdentifier>{e5602606-c07d-4f41-a413-0e405eb3376c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <None Include="Inverter_MS2017-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Inverter_MS2017-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="SPWMGen.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df1_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df2_ext_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_cascade_df2_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_df1_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_df2_ext_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_biquad_df2_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_cmplx_fir_iq31.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_cmplx_fir_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_fir_iq31.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\filter\msp_fir_q15.c">
+      <Filter>Source files\DSP\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\lea\msp_lea_flags.c">
+      <Filter>Source files\DSP\lea</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\lea\msp_lea_init.c">
+      <Filter>Source files\DSP\lea</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\lea\msp_lea_isr.c">
+      <Filter>Source files\DSP\lea</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\lea\msp_lea_patch.c">
+      <Filter>Source files\DSP\lea</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_abs_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_abs_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_add_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_add_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_mpy_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_mpy_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_neg_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_neg_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_offset_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_offset_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_scale_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_scale_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_shift_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_shift_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_sub_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_sub_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_trans_iq31.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\matrix\msp_matrix_trans_q15.c">
+      <Filter>Source files\DSP\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_bitrev_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_bitrev_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_auto_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_fixed_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_fft_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_auto_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_fixed_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_cmplx_ifft_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_fft_auto_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_fft_fixed_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_fft_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_ifft_auto_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_ifft_fixed_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_ifft_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_split_iq31.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_split_q15.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\transform\msp_transform_tables.c">
+      <Filter>Source files\DSP\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_cmplx_fill_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_cmplx_fill_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_cmplx_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_cmplx_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_copy_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_copy_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_deinterleave_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_deinterleave_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_fill_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_fill_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_interleave_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_interleave_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_iq31_to_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_q15_to_iq31.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\utility\msp_sinusoid_q15.c">
+      <Filter>Source files\DSP\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_abs_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_abs_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_add_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_add_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_add_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_add_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_conj_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_conj_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mac_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mac_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_real_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_mpy_real_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_scale_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_scale_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_shift_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_shift_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_sub_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_cmplx_sub_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_mac_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_mac_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_max_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_max_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_max_uq15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_max_uq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_min_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_min_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_min_uq15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_min_uq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_mpy_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_mpy_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_neg_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_neg_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_offset_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_offset_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_scale_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_scale_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_shift_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_shift_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_sub_iq31.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\source\vector\msp_sub_q15.c">
+      <Filter>Source files\DSP\vector</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Clock.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPWMGen.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBackPWMGen.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ADC.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Feedback.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_filter.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_lea.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_matrix.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_support.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_transform.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_types.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_utility.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\include\DSPLib_vector.h">
+      <Filter>Header files\DSP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyBackPWMGen.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ADC.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Feedback.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="low_level_init.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

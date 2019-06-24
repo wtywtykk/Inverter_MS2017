@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<VisualGDBUserPreferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserDefinedVariableValues />
+  <DebugPreferences xsi:type="com.visualgdb.debug.embedded.preferences">
+    <CatchpointConfiguration>
+      <Throw>false</Throw>
+      <Rethrow>false</Rethrow>
+      <Catch>false</Catch>
+      <Exec>false</Exec>
+      <Fork>false</Fork>
+      <Vfork>false</Vfork>
+      <Syscalls />
+    </CatchpointConfiguration>
+    <LiveWatches>
+      <LiveWatch>
+        <Expression>FFTBuffer</Expression>
+        <Settings xsi:type="GraphVisualWatchSettings">
+          <Type>SInt16</Type>
+          <ElementCount>512</ElementCount>
+        </Settings>
+        <VisualizerID>com.sysprogs.visualwatch.graph</VisualizerID>
+      </LiveWatch>
+      <LiveWatch>
+        <Expression>FFTBufferAbs</Expression>
+        <Settings xsi:type="GraphVisualWatchSettings">
+          <Type>Float32</Type>
+          <ElementCount>512</ElementCount>
+        </Settings>
+        <VisualizerID>com.sysprogs.visualwatch.graph</VisualizerID>
+      </LiveWatch>
+      <LiveWatch>
+        <Expression>HarmonicsAmp</Expression>
+        <Settings xsi:type="GraphVisualWatchSettings">
+          <Type>Float32</Type>
+          <ElementCount>5</ElementCount>
+        </Settings>
+        <VisualizerID>com.sysprogs.visualwatch.graph</VisualizerID>
+      </LiveWatch>
+      <LiveWatch>
+        <Expression>HarmonicsAng</Expression>
+        <Settings xsi:type="GraphVisualWatchSettings">
+          <Type>Float32</Type>
+          <ElementCount>5</ElementCount>
+        </Settings>
+        <VisualizerID>com.sysprogs.visualwatch.graph</VisualizerID>
+      </LiveWatch>
+      <LiveWatch>
+        <Expression>OutputSampleBuffer</Expression>
+        <Settings xsi:type="GraphVisualWatchSettings">
+          <Type>HexInt16</Type>
+          <ElementCount>256</ElementCount>
+        </Settings>
+        <VisualizerID>com.sysprogs.visualwatch.graph</VisualizerID>
+      </LiveWatch>
+    </LiveWatches>
+    <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
+    <MemoryWindowPreferences>
+      <MemoryWindowPreferences>
+        <SymbolicMode>true</SymbolicMode>
+        <TakeAddressMode>false</TakeAddressMode>
+        <Format>
+          <DataWidth>OneByte</DataWidth>
+          <DataFormat>Hexadecimal</DataFormat>
+          <TextFormat>ANSI</TextFormat>
+        </Format>
+        <LiveMemorySettings>
+          <Enabled>false</Enabled>
+          <BreakOnChanges>false</BreakOnChanges>
+          <AutoRefresh>false</AutoRefresh>
+          <RefreshTimeout>0</RefreshTimeout>
+        </LiveMemorySettings>
+        <ShowStatusBar>true</ShowStatusBar>
+        <DisplaySymbols>false</DisplaySymbols>
+      </MemoryWindowPreferences>
+    </MemoryWindowPreferences>
+    <FavoriteEmbeddedRegisters>
+      <string>MPY 16  Multiplier  16 Bit Mode</string>
+      <string>MPY 32  Multiplier  32 Bit Mode</string>
+    </FavoriteEmbeddedRegisters>
+    <LiveVariables />
+    <NestedLiveVariableSettings />
+  </DebugPreferences>
+</VisualGDBUserPreferences>
